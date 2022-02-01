@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdocumentor configVersion="3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.phpdoc.org" xsi:noNamespaceSchemaLocation="https://docs.phpdoc.org/latest/phpdoc.xsd">
+  <paths>
+    <output>docs/api</output>
+    <cache>docs/cache</cache>
+  </paths>
+  <version number="latest">
+    <api format="php">
+      <source dsn=".">
+        <path>clipnuke-ftp-uploader.php</path>
+        <path>index.php</path>
+        <path>sites.php</path>
+        <path>header.php</path>
+        <path>footer.php</path>
+        <path>inc/*</path>
+      </source>
+      <extensions>
+        <extension>php</extension>
+      </extensions>
+      <markers>
+        <marker>TODO</marker>
+        <marker>FIXME</marker>
+        <marker>NOTE</marker>
+      </markers>
+    </api>
+    <guide format="rst">
+      <source dsn=".">
+        <!--1 or more repetitions:-->
+        <path>support/docs</path>
+      </source>
+      <!--Optional:-->
+      <output>docs</output>
+    </guide>
+  </version>
+</phpdocumentor>
