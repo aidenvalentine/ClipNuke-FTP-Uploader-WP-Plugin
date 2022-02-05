@@ -1,4 +1,10 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
+<?php
+/** Turn each array key into a var */
+foreach ($vars as $key => $value) {
+	$$key = $vars[$key];
+}
+?>
 <html>
 	<head>
 		<!-- CSS only -->
